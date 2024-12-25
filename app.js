@@ -9,9 +9,9 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-  origin: ["http://172.16.40.153:5502"], 
+  origin: ["http://172.16.40.153:5502","https://rausnotes39.netlify.app"], 
   credentials: true,
-};
+}
 app.use(cors(corsOptions));
 const port = process.env.PORT || 9090;
 const MongodbURI = process.env.mongodb_URI;
